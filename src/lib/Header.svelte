@@ -28,7 +28,7 @@
     width: 100%;
   }
   .main {
-    background-image: linear-gradient(to bottom, #000000ff 0%, #00000000 100%);
+    background: linear-gradient(to bottom, #000000ff 0%, #00000000 100%);
     backdrop-filter: blur(4px);
   }
   .main .container{
