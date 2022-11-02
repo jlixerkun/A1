@@ -1,6 +1,7 @@
 <script>
   export let status = "default";
   import amarilogo from "../assets/amarilogo.svg";
+  import Button from "./Button.svelte";
 </script>
 
 <header class={status}>
@@ -10,6 +11,7 @@
     </a>
     <nav class="menu">
       <ul>
+        <li><Button /></li>
         <li><a href="/proyectos">Proyectos</a></li>
         <li><a href="/herramientas">Herramientas</a></li>
         <li><a href="/mi-cuenta">Mi cuenta</a></li>
@@ -25,6 +27,10 @@
     left: 0;
     width: 100%;
   }
+  .main {
+    background-image: linear-gradient(to bottom, #000000ff 0%, #00000000 100%);
+    backdrop-filter: blur(4px);
+  }
   .main .container{
     border-color: #334488; 
     display: grid;
@@ -34,7 +40,8 @@
     align-self: center;
   }
   .menu {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
   }
   .menu ul {
     list-style: none;
@@ -46,6 +53,8 @@
   
   .menu ul li a {
     padding: 2rem;
+    color: #fff;
+    
   }
   .container {
     width: 90%;
